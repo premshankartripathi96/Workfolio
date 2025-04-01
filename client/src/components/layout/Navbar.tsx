@@ -46,12 +46,12 @@ export default function Navbar() {
 
   return (
     <header className={cn(
-      "fixed w-full bg-[#000080]/95 backdrop-blur-sm z-50 transition-all duration-300",
+      "fixed w-full bg-[#8A2BE2]/95 backdrop-blur-sm z-50 transition-all duration-300",
       scrolled ? "shadow-md" : ""
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold font-poppins text-white">
-          PST<span className="text-[#4A90E2]">.</span>
+        <a href="#" className="text-xl font-bold font-poppins text-white">
+          Prem's Portfolio<span className="text-[#4A90E2]">.</span>
         </a>
         
         <nav className="hidden md:flex space-x-8">
@@ -86,7 +86,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "md:hidden bg-[#000080] transition-all duration-300 overflow-hidden",
+          "md:hidden bg-[#8A2BE2] transition-all duration-300 overflow-hidden",
           isOpen ? "max-h-64" : "max-h-0"
         )}
       >

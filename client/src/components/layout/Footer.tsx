@@ -3,12 +3,12 @@ import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#000080] text-white py-10">
+    <footer className="bg-[#8A2BE2] text-white py-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="text-2xl font-bold font-poppins">
-              PST<span className="text-[#4A90E2]">.</span>
+            <a href="#" className="text-xl font-bold font-poppins">
+              Prem's Portfolio<span className="text-[#4A90E2]">.</span>
             </a>
             <p className="mt-2 text-gray-200">Web Developer & BCA Student</p>
           </div>

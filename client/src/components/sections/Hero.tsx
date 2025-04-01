@@ -48,7 +48,7 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border-4 border-white/20">
             <Avatar className="w-full h-full">
               <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
-              <AvatarFallback className="text-4xl font-bold">PST</AvatarFallback>
+              <AvatarFallback className="text-3xl font-bold">Prem</AvatarFallback>
             </Avatar>
             <div className="absolute inset-0 bg-[#4A90E2] bg-opacity-10"></div>
           </div>
