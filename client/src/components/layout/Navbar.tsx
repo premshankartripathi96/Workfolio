@@ -46,12 +46,12 @@ export default function Navbar() {
 
   return (
     <header className={cn(
-      "fixed w-full bg-[#8A2BE2]/95 backdrop-blur-sm z-50 transition-all duration-300",
+      "fixed w-full bg-[#000021] backdrop-blur-sm z-50 transition-all duration-300",
       scrolled ? "shadow-md" : ""
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold font-poppins text-white">
-          Prem's Portfolio<span className="text-[#4A90E2]">.</span>
+        <a href="#" className="text-xl font-bold font-poppins text-[#8A2BE2]">
+          Prem's Portfolio<span className="text-white">.</span>
         </a>
         
         <nav className="hidden md:flex space-x-8">
@@ -60,14 +60,14 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "nav-link font-medium text-white/90 hover:text-[#4A90E2] relative",
-                activeSection === link.href.substring(1) ? "text-[#4A90E2]" : ""
+                "nav-link font-medium text-white/90 hover:text-[#8A2BE2] relative transition-transform duration-300 hover:scale-110",
+                activeSection === link.href.substring(1) ? "text-[#8A2BE2]" : ""
               )}
               onClick={() => setActiveSection(link.href.substring(1))}
             >
               {link.label}
               <span className={cn(
-                "absolute bottom-[-4px] left-0 h-0.5 bg-[#4A90E2] transition-all duration-300",
+                "absolute bottom-[-4px] left-0 h-0.5 bg-[#8A2BE2] transition-all duration-300",
                 activeSection === link.href.substring(1) ? "w-full" : "w-0"
               )} />
             </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "md:hidden bg-[#8A2BE2] transition-all duration-300 overflow-hidden",
+          "md:hidden bg-[#000021] transition-all duration-300 overflow-hidden",
           isOpen ? "max-h-64" : "max-h-0"
         )}
       >
@@ -95,7 +95,7 @@ export default function Navbar() {
             <a 
               key={link.href}
               href={link.href}
-              className="font-medium text-white/90 hover:text-[#4A90E2] py-2"
+              className="font-medium text-white/90 hover:text-[#8A2BE2] py-2 transition-transform duration-300 hover:scale-110"
               onClick={closeMenu}
             >
               {link.label}

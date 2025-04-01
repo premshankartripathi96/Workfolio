@@ -5,7 +5,7 @@ import profileImage from "@/assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-[#7B68EE]"> {/* Medium slate blue background to complement lavender header */}
+    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-[#000021]"> {/* Navy blue background as requested */}
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
         <motion.div 
           className="md:w-1/2 mb-10 md:mb-0"
@@ -13,7 +13,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-[#4A90E2] font-medium mb-4">Hello, I'm</p>
+          <p className="text-[#8A2BE2] font-medium mb-4">Hello, I'm</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins text-white mb-6">
             Prem Shankar Tripathi
           </h1>
@@ -24,7 +24,7 @@ export default function Hero() {
             <Button 
               asChild
               size="lg" 
-              className="bg-[#4A90E2] hover:bg-[#4A90E2]/90 text-white font-medium py-3 px-8 rounded-md"
+              className="bg-[#8A2BE2] hover:bg-[#9F3DFF] text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105"
             >
               <a href="#projects">View My Work</a>
             </Button>
@@ -32,7 +32,7 @@ export default function Hero() {
               asChild
               variant="outline" 
               size="lg" 
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 font-medium py-3 px-8 rounded-md"
+              className="bg-white/10 text-white border-[#8A2BE2] hover:bg-[#8A2BE2]/20 font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105"
             >
               <a href="#contact">Contact Me</a>
             </Button>
@@ -45,12 +45,12 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border-4 border-white/20">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border-4 border-[#8A2BE2] shadow-lg shadow-[#8A2BE2]/20 transition-all duration-500 hover:shadow-xl hover:shadow-[#8A2BE2]/30">
             <Avatar className="w-full h-full">
               <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
-              <AvatarFallback className="text-3xl font-bold">Prem</AvatarFallback>
+              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
             </Avatar>
-            <div className="absolute inset-0 bg-[#4A90E2] bg-opacity-10"></div>
+            <div className="absolute inset-0 bg-[#8A2BE2] bg-opacity-5 hover:bg-opacity-0 transition-all duration-300"></div>
           </div>
         </motion.div>
       </div>
