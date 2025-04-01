@@ -77,7 +77,7 @@ export default function Contact() {
           <p className="text-[#333333] max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out to me using the form below or through my social media.
           </p>
-          <div className="w-20 h-1 bg-[#4A90E2] mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-[#8A2BE2] mx-auto mt-4"></div>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -91,7 +91,7 @@ export default function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export default function Contact() {
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -111,7 +111,7 @@ export default function Contact() {
               </div>
               
               <div className="flex items-start">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -126,7 +126,7 @@ export default function Contact() {
               <div className="flex space-x-4">
                 <a 
                   href={socialLinks.github} 
-                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#4A90E2]"
+                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#8A2BE2]"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -135,7 +135,7 @@ export default function Contact() {
                 </a>
                 <a 
                   href={socialLinks.linkedin} 
-                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#4A90E2]"
+                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#8A2BE2]"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -144,7 +144,7 @@ export default function Contact() {
                 </a>
                 <a 
                   href={socialLinks.twitter} 
-                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#4A90E2]"
+                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#8A2BE2]"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -153,7 +153,7 @@ export default function Contact() {
                 </a>
                 <a 
                   href={socialLinks.instagram} 
-                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#4A90E2]"
+                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#8A2BE2]"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -162,7 +162,7 @@ export default function Contact() {
                 </a>
                 <a 
                   href={socialLinks.facebook} 
-                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#4A90E2]"
+                  className="text-[#2D2D2D] text-2xl transition-transform duration-300 hover:-translate-y-1 hover:text-[#8A2BE2]"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -192,7 +192,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="John Doe"
-                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8A2BE2]"
                           {...field}
                         />
                       </FormControl>
@@ -211,7 +211,7 @@ export default function Contact() {
                         <Input
                           type="email"
                           placeholder="john@example.com"
-                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8A2BE2]"
                           {...field}
                         />
                       </FormControl>
@@ -229,7 +229,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Project Inquiry"
-                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8A2BE2]"
                           {...field}
                         />
                       </FormControl>
@@ -247,7 +247,7 @@ export default function Contact() {
                       <FormControl>
                         <Textarea
                           placeholder="I'd like to discuss a project..."
-                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                          className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8A2BE2]"
                           rows={4}
                           {...field}
                         />
@@ -259,7 +259,7 @@ export default function Contact() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#4A90E2] text-white font-medium py-3 px-6 rounded-md hover:bg-[#4A90E2]/90 transition-colors"
+                  className="w-full bg-[#8A2BE2] text-white font-medium py-3 px-6 rounded-md hover:bg-[#7B68EE] transition-colors"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}

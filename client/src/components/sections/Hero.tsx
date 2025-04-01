@@ -5,7 +5,7 @@ import profileImage from "@/assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-[#000080]"> {/* Navy blue background */}
+    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-[#7B68EE]"> {/* Medium slate blue background to complement lavender header */}
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
         <motion.div 
           className="md:w-1/2 mb-10 md:mb-0"

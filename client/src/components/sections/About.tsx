@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <section id="about" className="section py-20 bg-[#F5F5F5]">
+    <section id="about" className="section py-20 bg-[#F8F5FF]">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-16"
@@ -14,7 +14,7 @@ export default function About() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold font-poppins text-[#2D2D2D] mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-[#4A90E2] mx-auto"></div>
+          <div className="w-20 h-1 bg-[#8A2BE2] mx-auto"></div>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -58,7 +58,7 @@ export default function About() {
             <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-6">My Approach</h3>
             <div className="space-y-6">
               <div className="flex">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <CodeXml size={24} />
                 </div>
                 <div>
@@ -68,7 +68,7 @@ export default function About() {
               </div>
               
               <div className="flex">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <Layout size={24} />
                 </div>
                 <div>
@@ -78,7 +78,7 @@ export default function About() {
               </div>
               
               <div className="flex">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <SmilePlus size={24} />
                 </div>
                 <div>
@@ -88,7 +88,7 @@ export default function About() {
               </div>
               
               <div className="flex">
-                <div className="mr-4 mt-1 text-[#4A90E2]">
+                <div className="mr-4 mt-1 text-[#8A2BE2]">
                   <Rocket size={24} />
                 </div>
                 <div>

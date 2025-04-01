@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Skills() {
   return (
-    <section id="skills" className="section py-20 bg-[#F5F5F5]">
+    <section id="skills" className="section py-20 bg-[#F0E6FF]">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-16"
@@ -18,7 +18,7 @@ export default function Skills() {
           <p className="text-[#333333] max-w-2xl mx-auto">
             Here's a breakdown of my technical skills and expertise in various web development technologies.
           </p>
-          <div className="w-20 h-1 bg-[#4A90E2] mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-[#8A2BE2] mx-auto mt-4"></div>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -41,12 +41,12 @@ export default function Skills() {
                 >
                   <div className="flex justify-between mb-2">
                     <span className="font-medium text-[#2D2D2D]">{skill.name}</span>
-                    <span className="text-[#4A90E2]">{skill.percentage}%</span>
+                    <span className="text-[#8A2BE2]">{skill.percentage}%</span>
                   </div>
                   <Progress 
                     value={skill.percentage} 
                     className="h-1.5 bg-gray-200" 
-                    indicatorClassName="bg-[#4A90E2]" 
+                    indicatorClassName="bg-[#8A2BE2]" 
                   />
                 </motion.div>
               ))}
@@ -72,12 +72,12 @@ export default function Skills() {
                 >
                   <div className="flex justify-between mb-2">
                     <span className="font-medium text-[#2D2D2D]">{skill.name}</span>
-                    <span className="text-[#4A90E2]">{skill.percentage}%</span>
+                    <span className="text-[#8A2BE2]">{skill.percentage}%</span>
                   </div>
                   <Progress 
                     value={skill.percentage} 
                     className="h-1.5 bg-gray-200" 
-                    indicatorClassName="bg-[#4A90E2]" 
+                    indicatorClassName="bg-[#8A2BE2]" 
                   />
                 </motion.div>
               ))}

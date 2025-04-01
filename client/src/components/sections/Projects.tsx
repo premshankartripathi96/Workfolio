@@ -18,7 +18,7 @@ export default function Projects() {
           <p className="text-[#333333] max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills and expertise in web development.
           </p>
-          <div className="w-20 h-1 bg-[#4A90E2] mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-[#8A2BE2] mx-auto mt-4"></div>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -44,16 +44,16 @@ export default function Projects() {
                   <p className="text-[#333333] mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="bg-[#F5F5F5] text-sm text-[#2D2D2D] px-3 py-1 rounded-full">
+                      <span key={tagIndex} className="bg-[#F0E6FF] text-sm text-[#4B0082] px-3 py-1 rounded-full">
                         {tag}
                       </span>
                     ))}
                   </div>
                   <div className="flex justify-between mt-4">
-                    <a href={project.projectLink} className="text-[#4A90E2] font-medium hover:underline">
+                    <a href={project.projectLink} className="text-[#8A2BE2] font-medium hover:underline">
                       View Project
                     </a>
-                    <a href={project.sourceLink} className="text-[#2D2D2D] font-medium hover:underline">
+                    <a href={project.sourceLink} className="text-[#4B0082] font-medium hover:underline">
                       Source Code
                     </a>
                   </div>
@@ -67,7 +67,7 @@ export default function Projects() {
           <Button 
             variant="outline" 
             size="lg" 
-            className="bg-[#F5F5F5] text-[#2D2D2D] border-none hover:bg-[#F5F5F5]/80 font-medium"
+            className="bg-[#8A2BE2] text-white border-none hover:bg-[#7B68EE] font-medium"
           >
             View All Projects
           </Button>
