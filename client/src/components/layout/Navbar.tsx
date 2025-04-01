@@ -27,7 +27,7 @@ export default function Navbar() {
       }
 
       // Highlight active navigation based on scroll position
-      const sections = document.querySelectorAll('section[id]');
+      const sections = document.querySelectorAll<HTMLElement>('section[id]');
       
       sections.forEach(section => {
         const sectionTop = section.offsetTop - 100;
@@ -46,11 +46,11 @@ export default function Navbar() {
 
   return (
     <header className={cn(
-      "fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300",
-      scrolled ? "shadow-sm" : ""
+      "fixed w-full bg-[#000080]/95 backdrop-blur-sm z-50 transition-all duration-300",
+      scrolled ? "shadow-md" : ""
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold font-poppins text-[#2D2D2D]">
+        <a href="#" className="text-2xl font-bold font-poppins text-white">
           PST<span className="text-[#4A90E2]">.</span>
         </a>
         
@@ -60,7 +60,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "nav-link font-medium text-[#2D2D2D] hover:text-[#4A90E2] relative",
+                "nav-link font-medium text-white/90 hover:text-[#4A90E2] relative",
                 activeSection === link.href.substring(1) ? "text-[#4A90E2]" : ""
               )}
               onClick={() => setActiveSection(link.href.substring(1))}
@@ -75,7 +75,7 @@ export default function Navbar() {
         </nav>
         
         <button 
-          className="md:hidden text-[#2D2D2D] text-2xl"
+          className="md:hidden text-white text-2xl"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -86,7 +86,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "md:hidden bg-white transition-all duration-300 overflow-hidden",
+          "md:hidden bg-[#000080] transition-all duration-300 overflow-hidden",
           isOpen ? "max-h-64" : "max-h-0"
         )}
       >
@@ -95,7 +95,7 @@ export default function Navbar() {
             <a 
               key={link.href}
               href={link.href}
-              className="font-medium text-[#2D2D2D] hover:text-[#4A90E2] py-2"
+              className="font-medium text-white/90 hover:text-[#4A90E2] py-2"
               onClick={closeMenu}
             >
               {link.label}

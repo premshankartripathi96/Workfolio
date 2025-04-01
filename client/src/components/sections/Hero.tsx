@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import profileImage from "@/assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-white">
+    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-[#000080]"> {/* Navy blue background */}
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
         <motion.div 
           className="md:w-1/2 mb-10 md:mb-0"
@@ -13,10 +14,10 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <p className="text-[#4A90E2] font-medium mb-4">Hello, I'm</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins text-[#2D2D2D] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins text-white mb-6">
             Prem Shankar Tripathi
           </h1>
-          <p className="text-lg md:text-xl text-[#333333] mb-8">
+          <p className="text-lg md:text-xl text-gray-200 mb-8">
             A passionate web developer crafting beautiful and functional digital experiences
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -31,7 +32,7 @@ export default function Hero() {
               asChild
               variant="outline" 
               size="lg" 
-              className="bg-[#F5F5F5] text-[#2D2D2D] border-none hover:bg-[#F5F5F5]/80 font-medium py-3 px-8 rounded-md"
+              className="bg-white/10 text-white border-white/30 hover:bg-white/20 font-medium py-3 px-8 rounded-md"
             >
               <a href="#contact">Contact Me</a>
             </Button>
@@ -44,9 +45,9 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#F5F5F5] flex items-center justify-center overflow-hidden">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border-4 border-white/20">
             <Avatar className="w-full h-full">
-              <AvatarImage src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Profile image" className="object-cover" />
+              <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
               <AvatarFallback className="text-4xl font-bold">PST</AvatarFallback>
             </Avatar>
             <div className="absolute inset-0 bg-[#4A90E2] bg-opacity-10"></div>
