@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#000021] flex items-center justify-center overflow-hidden border-4 border-[#8A2BE2] shadow-lg shadow-[#8A2BE2]/20 transition-all duration-500 hover:shadow-xl hover:shadow-[#8A2BE2]/30">
-            <Avatar className="w-full h-full">
+            <Avatar className="w-full h-full transform transition-transform duration-500 hover:scale-110">
               <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
               <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
             </Avatar>
