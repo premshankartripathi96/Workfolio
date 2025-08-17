@@ -19,7 +19,7 @@ export default function Hero() {
               <AvatarImage 
                 src={profileImage} 
                 alt="Prem Shankar Tripathi" 
-                className="object-cover scale-150 translate-y-4" 
+                className="object-cover scale-150 translate-y-6" 
               />
               <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
             </Avatar>
