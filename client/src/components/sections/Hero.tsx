@@ -5,13 +5,29 @@ import profileImage from "@/assets/profile.jpg";
 
 export default function Hero() {
   return (
-    <section id="home" className="section pt-32 pb-20 md:pt-40 md:pb-32 bg-white">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <section id="home" className="section pt-24 pb-20 bg-white">
+      <div className="container mx-auto px-6 text-center">
+        {/* Profile Image */}
         <motion.div 
-          className="md:w-1/2 mb-10 md:mb-0"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          className="flex justify-center mb-8"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
+        >
+          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden transition-all duration-500 hover:scale-105">
+            <Avatar className="w-full h-full transform transition-transform duration-500 hover:scale-110">
+              <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
+              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
+            </Avatar>
+          </div>
+        </motion.div>
+
+        {/* Name and Description */}
+        <motion.div 
+          className="max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-[#8A2BE2] font-medium mb-4">Hello, I'm</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-outfit text-black mb-6">
@@ -20,7 +36,7 @@ export default function Hero() {
           <p className="text-lg md:text-xl text-black/80 mb-8">
             A passionate web developer crafting beautiful and functional digital experiences
           </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
               asChild
               size="lg" 
@@ -36,21 +52,6 @@ export default function Hero() {
             >
               <a href="#contact">Contact Me</a>
             </Button>
-          </div>
-        </motion.div>
-        
-        <motion.div 
-          className="md:w-1/2 flex justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-[#8A2BE2] shadow-lg shadow-[#8A2BE2]/20 transition-all duration-500 hover:shadow-xl hover:shadow-[#8A2BE2]/30">
-            <Avatar className="w-full h-full transform transition-transform duration-500 hover:scale-110">
-              <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
-              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
-            </Avatar>
-            <div className="absolute inset-0 bg-[#8A2BE2] bg-opacity-5 hover:bg-opacity-0 transition-all duration-300"></div>
           </div>
         </motion.div>
       </div>
