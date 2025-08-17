@@ -50,8 +50,8 @@ export default function Navbar() {
       scrolled ? "shadow-md" : ""
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold font-outfit text-[#8A2BE2]">
-          Prem's Portfolio<span className="text-black">.</span>
+        <a href="#" className="text-xl font-bold font-outfit text-black">
+          Prem's Portfolio<span className="text-red-500">.</span>
         </a>
         
         <nav className="hidden md:flex space-x-8">
