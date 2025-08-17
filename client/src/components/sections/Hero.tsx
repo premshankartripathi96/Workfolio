@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@assets/IMG_20250619_184430_305_1755461869581.webp";
 
 export default function Hero() {
   return (
