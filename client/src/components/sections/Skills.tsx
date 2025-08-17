@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { skills, technologies } from "@/lib/constants";
+import { skills, technologies, tools } from "@/lib/constants";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -153,6 +153,45 @@ export default function Skills() {
                       </svg>
                     </div>
                     <span className="text-[#333333]">{tech.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Tools I Use Section */}
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Card className="bg-white rounded-lg p-8 shadow-sm">
+            <CardContent className="p-0">
+              <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-6 text-center">
+                Tools I Use
+              </h3>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                {tools.map((tool, index) => (
+                  <motion.div 
+                    key={index} 
+                    className="flex flex-col items-center"
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    whileHover={{ y: -5 }}
+                  >
+                    <div 
+                      className="text-4xl mb-2 h-8 w-8 flex items-center justify-center"
+                      style={{ color: tool.color }}
+                    >
+                      <span className="text-2xl font-bold">{tool.name.charAt(0)}</span>
+                    </div>
+                    <span className="text-[#333333] text-sm text-center">{tool.name}</span>
                   </motion.div>
                 ))}
               </div>

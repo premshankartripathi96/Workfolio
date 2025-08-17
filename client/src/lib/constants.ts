@@ -46,6 +46,21 @@ export const technologies = [
   { name: "Responsive", icon: "responsive-fill", color: "#8E44AD" },
 ];
 
+export const tools = [
+  { name: "VS Code", icon: "vscode", color: "#007ACC" },
+  { name: "Figma", icon: "figma", color: "#F24E1E" },
+  { name: "Postman", icon: "postman", color: "#FF6C37" },
+  { name: "Chrome DevTools", icon: "chrome", color: "#4285F4" },
+  { name: "npm", icon: "npm", color: "#CB3837" },
+  { name: "Webpack", icon: "webpack", color: "#8DD6F9" },
+  { name: "Docker", icon: "docker", color: "#2496ED" },
+  { name: "Netlify", icon: "netlify", color: "#00C7B7" },
+  { name: "Vercel", icon: "vercel", color: "#000000" },
+  { name: "Firebase", icon: "firebase", color: "#FFCA28" },
+  { name: "Slack", icon: "slack", color: "#4A154B" },
+  { name: "Notion", icon: "notion", color: "#000000" },
+];
+
 export const projects = [
   {
     title: "E-commerce Website",
