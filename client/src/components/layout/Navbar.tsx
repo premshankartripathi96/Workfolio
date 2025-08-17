@@ -50,7 +50,7 @@ export default function Navbar() {
       scrolled ? "shadow-md" : ""
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-bold font-poppins text-[#8A2BE2]">
+        <a href="#" className="text-xl font-bold font-outfit text-[#8A2BE2]">
           Prem's Portfolio<span className="text-white">.</span>
         </a>
         
