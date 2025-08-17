@@ -111,16 +111,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          
-          {/* Resume button */}
-          <a 
-            href="#" 
-            className="flex items-center justify-center gap-2 bg-black/80 hover:bg-black text-white font-medium py-3 px-4 rounded-md transition-all duration-300 mt-4"
-            onClick={closeMenu}
-          >
-            <Download size={18} />
-            My Resume
-          </a>
         </div>
       </div>
     </header>
