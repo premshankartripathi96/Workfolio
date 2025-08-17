@@ -44,19 +44,19 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
               asChild
-              size="sm" 
-              className="bg-black/80 hover:bg-black text-white font-medium py-1 px-3 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              size="lg" 
+              className="bg-black/80 hover:bg-black text-white font-medium py-3 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
               <a href="#" className="flex items-center gap-2">
                 My Resume
-                <Download size={16} />
+                <Download size={18} />
               </a>
             </Button>
             <Button 
               asChild
               variant="outline" 
-              size="sm" 
-              className="bg-white text-[#8A2BE2] border-[#8A2BE2] hover:bg-[#8A2BE2] hover:text-white font-medium py-1 px-3 rounded-2xl transition-all duration-300 transform hover:scale-105"
+              size="lg" 
+              className="bg-white text-[#8A2BE2] border-[#8A2BE2] hover:bg-[#8A2BE2] hover:text-white font-medium py-3 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
               <a href="#contact">Contact Me</a>
             </Button>
