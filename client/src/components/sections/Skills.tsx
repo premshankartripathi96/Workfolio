@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Skills() {
   return (
-    <section id="skills" className="section py-20 bg-[#F0E6FF]">
+    <section id="skills" className="section py-20 bg-white">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-16"

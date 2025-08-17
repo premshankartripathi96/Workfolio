@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#8A2BE2] text-white py-10">
+    <footer className="bg-white text-black py-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
