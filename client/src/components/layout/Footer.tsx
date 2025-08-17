@@ -10,9 +10,9 @@ export default function Footer() {
       </div>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 md:mb-0 text-center md:text-left">
             <a href="#" className="text-xl font-bold font-poppins">
-              Prem's Portfolio<span className="text-[#4A90E2]">.</span>
+              Prem's Portfolio<span className="text-red-500">.</span>
             </a>
             <p className="mt-2 text-gray-200">Web Developer & BCA Student</p>
           </div>
