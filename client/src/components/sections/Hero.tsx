@@ -38,7 +38,7 @@ export default function Hero() {
             Prem Shankar Tripathi
           </h1>
           <p className="text-lg md:text-xl text-black/80 mb-8">
-            A passionate web developer crafting beautiful and functional digital experiences
+            A passionate Full Stack Developer crafting beautiful and functional digital experiences
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
