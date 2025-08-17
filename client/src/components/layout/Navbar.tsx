@@ -46,8 +46,8 @@ export default function Navbar() {
 
   return (
     <header className={cn(
-      "fixed w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300",
-      scrolled ? "shadow-md" : ""
+      "fixed w-full z-50 transition-all duration-300",
+      scrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"
     )}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" className="text-xl font-bold font-outfit text-black">
