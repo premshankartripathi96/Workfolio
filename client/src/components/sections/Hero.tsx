@@ -44,7 +44,8 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
               asChild
-              className="bg-black/80 hover:bg-black text-white font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              variant="outline"
+              className="bg-black/80 hover:bg-black text-white border-none font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
               <a href="#" className="flex items-center gap-2">
                 My Resume
