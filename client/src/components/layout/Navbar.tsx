@@ -90,7 +90,7 @@ export default function Navbar() {
           isOpen ? "max-h-64" : "max-h-0"
         )}
       >
-        <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
+        <div className="container mx-auto px-6 py-4 pb-6 flex flex-col space-y-4">
           {navLinks.map((link) => (
             <a 
               key={link.href}

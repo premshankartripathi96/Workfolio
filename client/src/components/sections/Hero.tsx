@@ -33,7 +33,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-black font-medium mb-4">Hello, I'm 👋🏻</p>
+          <p className="text-xl font-medium mb-4 text-black">Hello, I'm 👋🏻</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-outfit text-black mb-6">
             Prem Shankar Tripathi
           </h1>
