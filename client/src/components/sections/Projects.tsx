@@ -66,7 +66,7 @@ export default function Projects() {
         <div className="text-center mt-12">
           <Button 
             variant="outline" 
-            className="bg-[#8A2BE2] text-white border-none hover:bg-[#7B68EE] font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+            className="bg-[#8A2BE2] text-white border-none hover:bg-[#7B68EE] font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
           >
             View All Projects
           </Button>
