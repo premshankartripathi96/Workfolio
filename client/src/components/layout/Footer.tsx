@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-white text-black py-10">
       {/* Horizontal line at the top */}
-      <div className="w-full h-px bg-gray-300 mb-10"></div>
+      <div className="container mx-auto px-6">
+        <div className="w-full h-px bg-gray-300 mb-10"></div>
+      </div>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
