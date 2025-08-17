@@ -34,7 +34,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <p className="text-black font-medium mb-4">Hello, I'm 👋🏻</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-outfit text-black mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-outfit text-black mb-6">
             Prem Shankar Tripathi
           </h1>
           <p className="text-lg md:text-xl text-black/80 mb-8">
