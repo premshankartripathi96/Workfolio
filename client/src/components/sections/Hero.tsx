@@ -45,11 +45,11 @@ export default function Hero() {
             <Button 
               asChild
               size="lg" 
-              className="bg-black/80 hover:bg-black text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              className="bg-black/80 hover:bg-black text-white font-medium py-1.5 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
               <a href="#" className="flex items-center gap-2">
-                <Download size={18} />
                 My Resume
+                <Download size={18} />
               </a>
             </Button>
             <Button 
