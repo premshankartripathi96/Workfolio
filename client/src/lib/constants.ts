@@ -43,7 +43,7 @@ export const technologies = [
   { name: "Tailwind", icon: "tailwind-css-fill", color: "#38B2AC" },
   { name: "Terminal", icon: "terminal-box-fill", color: "#3C873A" },
   { name: "AWS", icon: "cloud-fill", color: "#FF9900" },
-  { name: "Responsive", icon: "responsive-fill", color: "#8E44AD" },
+  { name: "Next.js", icon: "nextjs-fill", color: "#000000" },
 ];
 
 export const tools = [
