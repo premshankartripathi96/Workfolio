@@ -45,7 +45,7 @@ export default function Hero() {
             <Button 
               asChild
               size="lg" 
-              className="bg-black/80 hover:bg-black text-white font-medium py-3 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              className="bg-black/80 hover:bg-black text-white font-medium py-3 px-2 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
               <a href="#" className="flex items-center gap-2">
                 My Resume
@@ -56,7 +56,7 @@ export default function Hero() {
               asChild
               variant="outline" 
               size="lg" 
-              className="bg-white text-[#8A2BE2] border-[#8A2BE2] hover:bg-[#8A2BE2] hover:text-white font-medium py-3 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-[#8A2BE2] border-[#8A2BE2] hover:bg-[#8A2BE2] hover:text-white font-medium py-3 px-2 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
               <a href="#contact">Contact Me</a>
             </Button>
