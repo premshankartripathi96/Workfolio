@@ -16,7 +16,11 @@ export default function Hero() {
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden transition-all duration-500 hover:scale-105">
             <Avatar className="w-full h-full transform transition-transform duration-500 hover:scale-110">
-              <AvatarImage src={profileImage} alt="Prem Shankar Tripathi" className="object-cover" />
+              <AvatarImage 
+                src={profileImage} 
+                alt="Prem Shankar Tripathi" 
+                className="object-cover scale-150 translate-y-4" 
+              />
               <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
             </Avatar>
           </div>
