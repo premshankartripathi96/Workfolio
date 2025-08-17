@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Download } from "lucide-react";
 import profileImage from "@assets/IMG_20250619_184430_305_1755461869581.webp";
 
 export default function Hero() {
@@ -44,9 +45,12 @@ export default function Hero() {
             <Button 
               asChild
               size="lg" 
-              className="bg-[#8A2BE2] hover:bg-[#9F3DFF] text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105"
+              className="bg-black/80 hover:bg-black text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
             >
-              <a href="#projects">View My Work</a>
+              <a href="#" className="flex items-center gap-2">
+                <Download size={18} />
+                My Resume
+              </a>
             </Button>
             <Button 
               asChild

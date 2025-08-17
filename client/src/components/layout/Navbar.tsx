@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { navLinks } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -87,10 +87,20 @@ export default function Navbar() {
       <div 
         className={cn(
           "md:hidden bg-[#F0E6FF]/95 transition-all duration-300 overflow-hidden absolute right-0 top-0 w-1/2 mb-4",
-          isOpen ? "max-h-64" : "max-h-0"
+          isOpen ? "max-h-96" : "max-h-0"
         )}
       >
         <div className="px-6 py-4 pb-8 flex flex-col space-y-4">
+          {/* Close button */}
+          <div className="flex justify-end mb-2">
+            <button 
+              onClick={closeMenu}
+              className="text-black/80 hover:text-black transition-colors"
+            >
+              <X size={20} />
+            </button>
+          </div>
+          
           {navLinks.map((link) => (
             <a 
               key={link.href}
@@ -101,6 +111,16 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          
+          {/* Resume button */}
+          <a 
+            href="#" 
+            className="flex items-center justify-center gap-2 bg-black/80 hover:bg-black text-white font-medium py-3 px-4 rounded-md transition-all duration-300 mt-4"
+            onClick={closeMenu}
+          >
+            <Download size={18} />
+            My Resume
+          </a>
         </div>
       </div>
     </header>
