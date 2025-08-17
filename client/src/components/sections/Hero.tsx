@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Download } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 import profileImage from "@assets/IMG_20250619_184430_305_1755461869581.webp";
 
 export default function Hero() {
@@ -56,9 +56,12 @@ export default function Hero() {
               asChild
               variant="outline" 
               size="lg" 
-              className="bg-white text-[#8A2BE2] border-[#8A2BE2] hover:bg-[#8A2BE2] hover:text-white font-medium py-3 px-2 rounded-2xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-black/80 border-black/80 hover:border-black hover:text-black font-medium py-3 px-2 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
-              <a href="#contact">Contact Me</a>
+              <a href="#contact" className="flex items-center gap-2">
+                Contact Me
+                <ArrowRight size={18} />
+              </a>
             </Button>
           </div>
         </motion.div>
