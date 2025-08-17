@@ -45,7 +45,7 @@ export default function Hero() {
             <Button 
               asChild
               variant="outline"
-              className="bg-black/80 hover:bg-black text-white border-none font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+              className="bg-black/80 hover:bg-black text-white border-none font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
               <a href="#" className="flex items-center gap-2">
                 My Resume
@@ -55,7 +55,7 @@ export default function Hero() {
             <Button 
               asChild
               variant="outline" 
-              className="bg-white text-black/80 border-black/80 hover:border-black hover:text-black font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white hover:bg-gray-50 text-black/80 border-none font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
               <a href="#contact" className="flex items-center gap-2">
                 Contact Me
