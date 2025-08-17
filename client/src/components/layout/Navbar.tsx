@@ -86,7 +86,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "md:hidden bg-[#F0E6FF]/95 transition-all duration-300 overflow-hidden absolute right-0 w-1/2",
+          "md:hidden bg-[#F0E6FF]/95 transition-all duration-300 overflow-hidden absolute right-0 w-1/2 mb-4",
           isOpen ? "max-h-64" : "max-h-0"
         )}
       >
