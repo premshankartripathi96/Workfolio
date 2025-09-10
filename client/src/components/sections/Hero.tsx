@@ -6,7 +6,7 @@ import profileImage from "@assets/IMG_20250619_184430_305_1755461869581.webp";
 
 export default function Hero() {
   return (
-    <section id="home" className="section pt-24 pb-20 bg-white">
+    <section id="home" className="section pt-24 pb-20 bg-white dark:bg-[#11001f]">
       <div className="container mx-auto px-6 text-center">
         {/* Profile Image */}
         <motion.div 
@@ -19,49 +19,44 @@ export default function Hero() {
             <Avatar className="w-full h-full transform transition-transform duration-500 hover:scale-110">
               <AvatarImage 
                 src={profileImage} 
-                alt="Prem Shankar Tripathi" 
+                alt="Paveen Singh " 
                 className="object-cover scale-[1.7] translate-y-8" 
               />
-              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
+              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Praveen</AvatarFallback>
             </Avatar>
           </div>
         </motion.div>
 
         {/* Name and Description */}
         <motion.div 
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl mx-auto items-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-black font-medium mb-4">Hello, I'm 👋🏻</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-outfit text-black mb-6">
-            Prem Shankar Tripathi
+          <p className="text-lg md:text-xl text-black dark:text-white font-medium mb-4">Hello, I'm Praveen Singh 👋🏻</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-ovo text-black dark:text-white mb-6">
+            Full Stack Developer Based in Kanpur.
           </h1>
-          <p className="text-lg md:text-xl text-black/80 mb-8">
+          <p className="text-black/80 dark:text-white/80 mb-8">
             A passionate Full Stack Developer crafting beautiful and functional digital experiences
           </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button 
-              asChild
-              className="bg-black/80 hover:bg-black text-white font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
-            >
-              <a href="#" className="flex items-center gap-2">
-                My Resume
-                <Download size={16} />
-              </a>
-            </Button>
-            <Button 
-              asChild
-              variant="outline" 
-              className="bg-white text-black/80 border-black/80 hover:border-black hover:text-black font-medium py-2 px-4 rounded-2xl transition-all duration-300 transform hover:scale-105"
-            >
-              <a href="#contact" className="flex items-center gap-2">
-                Contact Me
-                <ArrowRight size={16} />
-              </a>
-            </Button>
-          </div>
+       <div className="flex justify-center items-center flex-col sm:flex-row gap-4 mt-4 w-full">
+  <a
+    href="#contact"
+    className="flex items-center gap-2 px-10 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full shadow-md hover:from-purple-500 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+  >
+    Contact Me <ArrowRight size={16} />
+  </a>
+  <a
+    href="/sample-resume.pdf"
+    download
+    className="flex items-center gap-2 px-10 py-3 border border-purple-600 text-black/80 rounded-full shadow-md hover:from-purple-300 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
+  >
+    My Resume <Download size={16} />
+  </a>
+</div>
+
         </motion.div>
       </div>
     </section>

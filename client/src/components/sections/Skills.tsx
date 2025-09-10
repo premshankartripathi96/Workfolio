@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Skills() {
   return (
-    <section id="skills" className="section py-20 bg-white">
+    <section id="skills" className="section py-20 bg-white dark:bg-[#11001f]">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-16"
@@ -14,8 +14,8 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-[#2D2D2D] mb-4">My Skills</h2>
-          <p className="text-[#333333] max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-[#2D2D2D] dark:text-white mb-4">My Skills</h2>
+          <p className="text-[#333333] dark:text-white/80 max-w-2xl mx-auto">
             Here's a breakdown of my technical skills and expertise in various web development technologies.
           </p>
           <div className="w-20 h-1 bg-[#8A2BE2] mx-auto mt-4"></div>
@@ -28,7 +28,7 @@ export default function Skills() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-8">Frontend Development</h3>
+            <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] dark:text-white mb-8">Frontend Development</h3>
             
             <div className="space-y-6">
               {skills.frontend.map((skill, index) => (
@@ -40,13 +40,13 @@ export default function Skills() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium text-[#2D2D2D]">{skill.name}</span>
-                    <span className="text-[#8A2BE2]">{skill.percentage}%</span>
+                    <span className="font-medium text-[#2D2D2D] dark:text-white">{skill.name}</span>
+                    <span className="text-[#8A2BE2] dark:text-purple-300">{skill.percentage}%</span>
                   </div>
                   <Progress 
                     value={skill.percentage} 
-                    className="h-1.5 bg-gray-200" 
-                    indicatorClassName="bg-[#8A2BE2]" 
+                    className="h-1.5 bg-gray-200 dark:bg-purple-950" 
+                    indicatorClassName="bg-[#8A2BE2] dark:bg-purple-400" 
                   />
                 </motion.div>
               ))}
@@ -59,7 +59,7 @@ export default function Skills() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-8">Backend & Other Skills</h3>
+            <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] dark:text-white mb-8">Backend & Other Skills</h3>
             
             <div className="space-y-6">
               {skills.backend.map((skill, index) => (
@@ -71,13 +71,13 @@ export default function Skills() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                 >
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium text-[#2D2D2D]">{skill.name}</span>
-                    <span className="text-[#8A2BE2]">{skill.percentage}%</span>
+                    <span className="font-medium text-[#2D2D2D] dark:text-white">{skill.name}</span>
+                    <span className="text-[#8A2BE2] dark:text-purple-300">{skill.percentage}%</span>
                   </div>
                   <Progress 
                     value={skill.percentage} 
-                    className="h-1.5 bg-gray-200" 
-                    indicatorClassName="bg-[#8A2BE2]" 
+                    className="h-1.5 bg-gray-200 dark:bg-purple-950" 
+                    indicatorClassName="bg-[#8A2BE2] dark:bg-purple-400" 
                   />
                 </motion.div>
               ))}
@@ -92,9 +92,9 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="bg-white rounded-lg p-8 shadow-sm">
+          <Card className="bg-white dark:bg-[#11001f] rounded-lg p-8 shadow-sm shadow-[0_0_20px_rgba(0,0,0,0.15)] dark:shadow-[0_0_20px_rgba(255,255,255,0.18)]">
             <CardContent className="p-0">
-              <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-6 text-center">
+              <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] dark:text-white mb-6 text-center">
                 Technologies I Work With
               </h3>
               
@@ -152,7 +152,7 @@ export default function Skills() {
                         )}
                       </svg>
                     </div>
-                    <span className="text-[#333333]">{tech.name}</span>
+                    <span className="text-[#333333] dark:text-white/90">{tech.name}</span>
                   </motion.div>
                 ))}
               </div>
@@ -168,9 +168,9 @@ export default function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="bg-white rounded-lg p-8 shadow-sm">
+          <Card className="bg-white dark:bg-[#11001f] rounded-lg p-8 shadow-sm shadow-[0_0_20px_rgba(0,0,0,0.15)] dark:shadow-[0_0_20px_rgba(255,255,255,0.18)]">
             <CardContent className="p-0">
-              <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] mb-6 text-center">
+              <h3 className="text-2xl font-semibold font-poppins text-[#2D2D2D] dark:text-white mb-6 text-center">
                 Tools I Use
               </h3>
               
@@ -228,7 +228,7 @@ export default function Skills() {
                         )}
                       </svg>
                     </div>
-                    <span className="text-[#333333] text-sm text-center">{tool.name}</span>
+                    <span className="text-[#333333] dark:text-white/90 text-sm text-center">{tool.name}</span>
                   </motion.div>
                 ))}
               </div>
