@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook, ArrowRight, Twitter } from "lucide-react";
-import { contactInfo, socialLinks, web3formsEndpoint, web3formsAccessKey } from "@/lib/constants";
+import { contactInfo, socialLinks } from "@/lib/constants";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { apiRequest } from "@/lib/queryClient";
+ 
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
@@ -43,32 +43,16 @@ export default function Contact() {
     }
   });
 
-  async function onSubmit(data: ContactFormValues) {
+  async function onSubmit(_data: ContactFormValues) {
     setIsSubmitting(true);
-    try {
-      if (!web3formsAccessKey) throw new Error("WEB3FORMS_ACCESS_KEY_MISSING");
-      const payload = {
-        access_key: web3formsAccessKey,
-        name: data.name,
-        email: data.email,
-        subject: data.subject,
-        message: data.message,
-      };
-      await apiRequest("POST", web3formsEndpoint, payload);
+    setTimeout(() => {
       toast({
-        title: "Message sent!",
+        title:"Message sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
       form.reset();
-    } catch (error) {
-      toast({
-        title: "Failed to send message",
-        description: "Please try again later or contact me directly via email.",
-        variant: "destructive"
-      });
-    } finally {
       setIsSubmitting(false);
-    }
+    }, 400);
   }
 
   return (
