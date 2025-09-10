@@ -96,7 +96,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg text-[#2D2D2D] dark:text-white mb-1">Email</h4>
-                  <p className="text-[#333333] dark:text-white/80">{contactInfo.email}</p>
+                  <p className="text-[#333333] dark:text-white/80">pstripathi2020@gmail.com</p>
                 </div>
               </div>
               
@@ -106,7 +106,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg text-[#2D2D2D] dark:text-white mb-1">Phone</h4>
-                  <p className="text-[#333333] dark:text-white/80">{contactInfo.phone}</p>
+                  <p className="text-[#333333] dark:text-white/80">+91 96960 60577</p>
                 </div>
               </div>
               
@@ -116,7 +116,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg text-[#2D2D2D] dark:text-white mb-1">Location</h4>
-                  <p className="text-[#333333] dark:text-white/80">{contactInfo.location}</p>
+                  <p className="text-[#333333] dark:text-white/80">Kanpur, India</p>
                 </div>
               </div>
             </div>
