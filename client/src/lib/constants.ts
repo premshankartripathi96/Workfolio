@@ -93,3 +93,8 @@ export const contactInfo = {
   phone: "+91 98765 43210",
   location: "New Delhi, India",
 };
+
+// Optional client-only contact endpoint for static hosting
+// Set VITE_CONTACT_ENDPOINT in your environment to a service like Formspree or Web3Forms
+export const web3formsEndpoint = "https://api.web3forms.com/submit";
+export const web3formsAccessKey = (import.meta as any).env?.VITE_WEB3FORMS_ACCESS_KEY || "";
