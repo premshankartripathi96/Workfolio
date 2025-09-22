@@ -22,7 +22,7 @@ export default function Hero() {
                 alt="Paveen Singh " 
                 className="object-cover scale-[1.7] translate-y-8" 
               />
-              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Praveen</AvatarFallback>
+              <AvatarFallback className="text-3xl font-bold text-[#8A2BE2]">Prem</AvatarFallback>
             </Avatar>
           </div>
         </motion.div>
@@ -34,7 +34,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-lg md:text-xl text-black dark:text-white font-medium mb-4">Hello, I'm Praveen Singh 👋🏻</p>
+          <p className="text-lg md:text-xl text-black dark:text-white font-medium mb-4">Hello, I'm Prem Shankar Tripathi 👋🏻</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-ovo text-black dark:text-white mb-6">
             Full Stack Developer Based in Kanpur.
           </h1>
